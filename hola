@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+# Ejemplo 1: Hola Mundo en perl
+
+# "Perl fue diseñado para el manejo de bases de datos textuales.
+# Permite el manejo de variables, arreglos, estructuras condicionales
+# y bucles"
+
+print "Hola Mundo!"; # Idéntico al "echo" de bash (ver que lleva ";" al final

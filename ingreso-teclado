@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+# Ejemplo 6: Ingreso de  datos por STDIN en perl
+# Usa una variable a la que le asigna el flujo STDIN 
+# Sintaxis:	$[nombre-variable] = <STDIN>;
+
+print "\n Ingrese su nombre: ";
+$nombre = <STDIN>;
+print "\n Su nombre es: $nombre \n ";
+
+# Función "chop" sirve para eliminar el caracter de retorno de carro
+# en las cadenas.
+# Su sintaxis es:	chop ( $[nombre-variable] = <STDIN> );
+
+print "\n Ingrese su edad: ";
+chop ( $edad = <STDIN> );
+print " Su edad es: $edad \n ";
+

@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+# Ejemplo 10: Sintaxis del for en perl
+
+#	for ( [inicialización] , [condición] , [incremento] ) {
+#		[sentencias]
+#	}
+
+# Se puede omitir alguna de las 3 secciones entre paréntesis 
+# sin dejar de poner las comas
+
+for ( $a = 0 , $a <= 10 , $a++ ) {
+	print "\n El número es: $a \n ";
+}

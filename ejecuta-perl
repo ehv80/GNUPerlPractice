@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+# Ejemplo 14: Ejecución de comandos de GNU/Linux en perl
+# Hay dos formas:
+
+# -> Una es usando la función "system":					system "[comando]" ;
+
+# -> Otra es usar una variable que guarde la salida del comando:	$[variable] = `[comando]`
+
+print "\nSu PC tiene un Microprocesador con las siguientes características:\n";
+
+system "cat /proc/cpuinfo";
+
+$memoria = `free -m`;
+
+print"\nLa cantidad de memoria en megabytes es de:\n ";
+print $memoria;
+
+print "\nPara ver la información de sus discos rígidos debe ser root:\n";
+system "/sbin/fdisk /dev/?d? -l";

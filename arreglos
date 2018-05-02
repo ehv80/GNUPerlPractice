@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+
+# Ejemplo 3: Definición de arreglos simples (los índices 
+# 		son números correlativos
+
+#	@[nombre-arreglo] = ( [valor0] , [valor1] , [valor2] , [valor3] , ... , [valorn] )
+
+# Es un arreglo de n elementos ( 0 <= índice <= n )
+
+
+
+@familia = ( Hector , Maria , Gisel , Ezequiel );
+
+
+
+# Visualización en pantalla:
+
+#	print "El valor x del arreglo [nombre-arreglo] es: $[nombre-arreglo][x] ";
+
+
+
+# Para mostrar todos los elementos del arreglo
+
+#	print "Todos los elementos del arreglo son: @[nombre-arreglo]";
+
+print " \n  El valor 0 del arreglo familia es: $familia[0] \n ";
+print " \n  El valor 1 del arreglo familia es: $familia[1] \n ";
+print " \n  El valor 2 del arreglo familia es: $familia[2] \n ";
+print " \n  El valor 3 del arreglo familia es: $familia[3] \n ";
+
+print "\n El contenido completo del arreglo es: @familia \n \n "; 

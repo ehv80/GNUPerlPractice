@@ -1,0 +1,44 @@
+#!/usr/bin/perl
+# Ejemplo 5: Evaluación de expresiones (Matemáticas y sobre cadenas de caracteres) en perl
+
+$val1=2;	# `val1´ contiene `2´
+$val2=5;
+
+print "\n Valores iniciales: 	$val1		$val2 \n ";
+ 
+print "Realizando suma... ";
+$val3 = $val1 + $val2; print "	$val3 \n";
+
+print "Realizando multiplicación:... ";
+$val4 = $val1 * $val2; print "	$val4 \n";
+
+print "Realizando división (posible) :... ";
+$val5 = $val2 / $val1; print "	$val5 \n";
+
+
+$cadena1="Ezequiel Hernán ";
+$cadena2="Villanueva";
+
+$nombre_completo=$cadena1.$cadena2;
+
+
+
+$cadena3="La Rioja ";
+$cadena4="2585";
+
+$direccion=$cadena3.$cadena4;
+
+
+$cadena5="(03464) 425749";
+
+# Concatenación de cadenas: 
+#				 $[concatenación]=$[cadenaX].$[cadenaY];
+
+print"\n \n";
+print "|--------------------|DATOS PERONALES|---------------------| \n";
+print "|							  | \n";
+print "|   Identificación:	 $nombre_completo		  | \n";
+print "|   Dirección:	 	 $direccion    	  		  | \n";
+print "|   Teléfono:		 $cadena5			  | \n";
+print "|----------------------------------------------------------| \n \n";
+

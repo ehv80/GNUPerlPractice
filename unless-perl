@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+# Ejemplo 8: Sintaxis de unless en perl 
+# Repite una sentencia "hasta que" la condición sea verdadera
+
+#	unless ( [condición] ) {
+#		[sentencias-ejecutadas-si-condición-es-falsa]
+#	}
+
+print "Ingrese un número: ";
+chop ( $numero = <STDIN> );
+unless ( $numero > 1000 ) {
+	print "\n Su número es menor que 1000 \n";
+	$numero = $numero + 1 ;
+}

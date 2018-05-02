@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+#Ejemplo 4: arreglos cuyos índices son etiquetas en lugar de números
+# 	    correlativos
+
+# Definición del arreglo con etiquetas:
+
+#	%[nombre-arreglo]=( "[etiqueta0]" , [valor0] , "[etiqueta1]" , [valor1] , ... , "[etiquetaN]" , [valorN] );
+
+%familia=( "Padre" , Hector , "Madre" , Maria , "Hija" , Gisel , "Hijo" , Ezequiel );
+
+# Visualización en pantalla:
+
+# De uno de los elementos del arreglo:	print "El valor de [etiqueta0] es: $[nombre-arreglo]{valor0}";
+
+print "\n El Padre es: $familia{Padre} \n ";
+print "\n La Madre es: $familia{Madre} \n ";
+print "\n El  Hijo es: $familia{Hijo} \n ";
+print "\n La  Hija es: $familia{Hija} \n \n ";
+

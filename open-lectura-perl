@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+# Ejemplo 12: uso de open para leer desde un archivo línea por línea.
+
+# Sintaxis:	open ( [variable-representativa] , "[nombre-archivo]" );
+
+# Para leer una a una todas las líneas se usa un bucle de repetición como 
+
+#	while ( <[nombre-archivo]> ) {
+#		print $_ ;
+#	}
+
+# $_ es una variable predefinida de perl que hace referencia a la entrada estandar.
+
+# No olvidarse de cerrar el archivo:	close [nombre-archivo] ;
+
+open ( archivo , "file.txt" ) ;
+
+$linea = <archivo> ;		# 1 línea
+print $linea;
+
+while ( <archivo> ) {
+	print $_ ;
+}
+
+close archivo;

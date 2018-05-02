@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+# Ejemplo 11: Sintaxis de open en perl
+
+# Modo por defecto SOLO LECTURA:	open ( [variable-representativa] , "[nombre-archivo]" );
+
+# Modo de escritura destructiva:	open ( [variable-representativa] , ">[nombre-archivo]" );
+
+# Modo de añadidura al final:		open ( [variable-representativa] , ">>[nombre-archivo]" );
+
+# 1º Se abre el archivo en alguno de los 3 modos y luego se realizan las operaciones
+# 2º Debe cerrar el archivo con "close"
+
+# Para escribir en el archivo :		print [variable-representativa] "[cadena-a-agregar]" ;
+
+open ( archivo , ">>file.txt" );
+
+print "\nIngrese su nombre: ";
+chop ( $nombre = <STDIN> );
+
+print "\nIngrese su apellido: ";
+chop ( $apellido = <STDIN> );
+
+print archivo "\n   $apellido, $nombre   \n";
+close archivo ;

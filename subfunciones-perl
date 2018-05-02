@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+# Ejemplo 13: Definición de subfunciones en perl se realizan al principio
+# del código como se hace en bash
+
+# Sintaxis:	sub [nombre-función] {
+#			[sentencias]
+#		}
+
+# Puede tener o no parámetros.
+# @_ hace referencia a todos los parámetros que se le pasan a la función.
+
+sub imprime {		# Definición de la subfunción "imprime"
+	print "\nEl contenido de los parámetros es: @_ \n";
+}
+
+# Invocación a la función con tantos parámetros como uno quiera
+
+imprime "Hector Mariano Villanueva es un crack!!!" ;

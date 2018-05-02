@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+
+# Ejemplo 2: Definición de variables	
+
+# 	$[nombre-variable] = [valor]
+
+# "$" significa que la variable contendrá un valor escalar (entero, 
+# flotante, o cadena)
+
+$nombre = "Ezequiel Hernán";
+$apellido = "Villanueva";
+
+# Visualización en pantalla:
+
+#	print "Valor de la variable [nombre-variable] es: $[nombre-variale]";
+
+print "\n Su nombre es: $nombre";
+print "\n Su apellido es: $apellido \n \n ";	#\n es newline (retorno de carro)"
+

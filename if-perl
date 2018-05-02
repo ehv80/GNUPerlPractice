@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+# Sintaxis del if en perl:
+# Se debe respetar la forma	if ( [condición] ) {
+#				[sentencias-condición-verdadera]
+#				}
+#				else {
+#				[sentencias-condición-falsa]
+#				}
+print "\n Ingrese un número entre 0 y 200: ";
+chop ( $number = <STDIN> ) ;
+
+#		OPERADORES DE COMPARACIÓN:
+#			eq	igualdad
+#			ne	desigualdad
+#			>	mayor estricto
+#			<	menor estricto
+#			>=	mayor o igual
+#			<=	menor o igual
+#			
+
+if ( $number eq 0 || $number eq 100 || $number eq 200 ) {
+	print "\n Usted ingresó: $number \n ";
+}
+else {
+	if ( $number < 100 ) {
+		print "\n El número $number está entre 0 y 100 (sin incluirlos) \n ";
+	}
+	else {
+		if ( $number > 100 ) {
+			print "\n El número $number está entre 100 y 200 (sin incluirlos) \n ";
+		}
+	     }
+     }
